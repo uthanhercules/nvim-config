@@ -12,6 +12,16 @@ end)
 
 require'lspconfig'.tsserver.setup{}
 
+require'lspconfig'.cssls.setup {
+  capabilities = capabilities,
+}
+
+require'lspconfig'.html.setup {
+  capabilities = capabilities,
+}
+
+require'lspconfig'.emmet_language_server.setup{}
+
 cmp.setup({
   mapping = cmp.mapping.preset.insert({
     ['<Tab>'] = cmp.mapping.confirm({ select = true }),  })
