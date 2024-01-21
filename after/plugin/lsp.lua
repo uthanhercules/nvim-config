@@ -22,6 +22,8 @@ require'lspconfig'.html.setup {
 
 require'lspconfig'.emmet_language_server.setup{}
 
+require'lspconfig'.svelte.setup{}
+
 cmp.setup({
   mapping = cmp.mapping.preset.insert({
     ['<Tab>'] = cmp.mapping.confirm({ select = true }),  })
